@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -13,6 +14,7 @@ func main() {
 			"msg":"ok",
 			"data":map[string]interface{}{
 				"description":"this is replit api service",
+				"time":time.Now().Format("2006-01-02 15:04:05.000000000 -0700 "),
 			},
 		})
 	})
